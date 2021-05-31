@@ -1,0 +1,1009 @@
+//base.scss
+//variables
+
+$primaryColor: #FCB72B;
+$titleColor: #495567;
+$textColor: #939CAA;
+$lightGrey: #E5ECF4;
+$snow: #F2F5F9;
+$lightYellow:  #FFF4DF;
+
+$headerSize_1: 56px;
+$headerSize_2: 48px;
+$headerSize_3: 40px;
+$headerSize_4: 24px;
+
+$textSize: 15px;
+
+
+@mixin flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    h1,h2,h3,h4,h5,h6{
+        font-family:  'Space Mono', monospace;
+    }
+    p, a{
+        font-family: 'Lexend Deca', sans-serif;
+    }
+    
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.about-container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+section{
+    padding: 80px 0;
+}
+
+.active{
+    color: $primaryColor !important;
+}
+
+.header1{
+    font-size: $headerSize_1;
+    font-weight: bold;
+}
+
+.header2{
+    font-size: $headerSize_2;
+    font-weight: bold;
+}
+
+.header3{
+    font-size: $headerSize_3;
+}
+
+.header4{
+    font-size: $headerSize_4;
+}
+
+.text{
+    color: $textColor;
+    padding: 30px 0;
+    line-height: 25px;
+}
+
+.btn{
+    padding: 14px 44px;
+    background-color: $primaryColor;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 25px;
+    font-size: $textSize;
+    border: 2px $primaryColor solid;
+    transition: all 0.5s ease;
+    letter-spacing: 1.5px;
+    
+    &:hover{
+        color: $primaryColor;
+        background-color: #ffffff;
+    }
+}
+
+
+
+// header
+.navbar{
+    padding: 22px 0;
+    .container{
+        @include flex();
+    }
+    .about-container{
+        @include flex();
+    }
+}
+
+.bar-menu-link{
+    display: none;
+}
+
+.media-line{
+    display: none
+}
+.nav-list{
+    @include flex();
+    margin-left: -440px;
+    //padding-top: 20px;
+}
+
+.nav-item{
+    padding: 0 30px;
+}
+
+.nav-link{
+    color: $textColor;
+    font-size: $textSize;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+
+//main body starts here
+
+.scooter-sharing{
+    background-image: url('../images/Bitmap.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.scooter-sharing__info{
+    width: 50%;
+
+    .header1{
+        color: #ffffff;
+    }
+}
+
+.scooter-sharing__mini___info{
+    .text{
+        color: #ffffff;
+    }
+
+    padding-left: 140px;
+}
+
+.straight-line,
+.uneven-line,
+.circles{
+    position: absolute;
+}
+
+.straight-line{
+    top: 55%;   
+}
+
+.uneven-line{
+    top: 55%;
+    left: 52%;
+}
+
+.circles{
+    top: 65%;
+    right: 0%;
+}
+
+// benefits section
+
+.benefits{
+    position: relative;
+}
+
+.benefits-list{
+    @include flex();
+}
+
+.benefits-item{
+    padding: 0 10px;
+
+    img{
+        padding-bottom: 20px;
+        }
+}
+
+.benefits-line{
+    position: absolute;
+    top: 32%;
+    left: 0;
+    z-index: -1;
+}
+
+
+//scoot-info starts
+
+.scoot-info{
+    position: relative;
+}
+
+
+.scoot-info-item{
+    @include flex();
+    padding: 50px 0;
+    position: relative;
+}
+
+.scoot-info-item:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+.scoot-info-item-content{
+    width: 45%;
+}
+
+.girl-with-phone{
+    border-radius: 50%;
+}
+
+.longline-from-right,
+.line-from-left,
+.short-line-from-right{
+    position: absolute;
+}
+
+.longline-from-right{
+    right: 0;
+    top: 25%;
+}
+
+.line-from-left{
+    top: 37%;
+    left: 0;
+}
+
+.short-line-from-right{
+    right: 0;
+    top: 72%;
+}
+
+.half-left-circle,
+.half-right-circle,
+.half-left-circle2{
+    position: absolute;
+}
+
+.half-left-circle{
+    top: 2%;
+    right: 0;
+}
+
+.half-right-circle{
+    left: 0;
+    top: 37%;
+}
+
+.half-left-circle2{
+    right: 0%;
+    top: 68%;
+}
+
+
+//sign up section
+
+.sign-up{
+    background-color: $titleColor;
+    color: #ffffff;
+    position: relative;
+
+    .container{
+        @include flex()
+    }
+}
+
+.sign-up-info{
+    width: 40%;
+}
+
+.appStoreLink{
+    margin-right: 10px;
+}
+
+.sign-up-links{
+   @include flex();
+   a{
+       //min-height: 140px;
+       img{
+           width: 100%;
+       }
+   }
+}
+
+
+.appStoreLink:hover,
+.googlePlayLink:hover{
+    cursor: pointer;
+}
+
+.triple-circle{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+// footer starts here
+
+.footer{
+    background-color: #333A44;
+    padding: 20px 0;
+    .container{
+        @include flex();        
+    }
+}
+
+.footer-list{
+    @include flex();
+    margin-left: -440px;
+}
+
+.footer-item{
+    padding: 0 30px;
+}
+
+.footer-link{
+    color: $textColor;
+
+    &:hover{
+        text-decoration: underline
+    }
+}
+
+.icons-list{
+    @include flex();
+}
+
+.icons-item{
+    padding: 0 10px;
+}
+
+.icons-link{
+    color: $primaryColor;
+
+    &:hover{
+        color: #ffffff;
+    }
+}
+
+
+//about landing page
+
+.about-bg-image{
+    background-image: url('../images/about-bg-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    //padding-left: 150px;
+}
+
+
+.about-girl-line{
+    position: absolute;
+    top: 33%;
+    right: 0;
+}
+.about-bus-line{
+    position: absolute;
+    top: 53%;
+}
+
+
+.about-half-right-circle,
+.about-half-left-circle{
+    position: absolute;
+}
+
+.about-half-left-circle{
+    top: 10%;
+    right: 0;
+}
+
+.about-half-right-circle{
+    top: 52%;
+    left: 0;
+}
+
+
+//about-values-section
+
+.about-values{
+    .container{
+        text-align: center;
+        .header2{
+            color: $titleColor;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.values-list{
+    @include flex();
+}
+
+.values-item{
+    position: relative;
+    padding: 0 10px;
+    .number{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 30px;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: $primaryColor;
+    }
+
+    .title{
+        padding-top: 60px;
+    }
+}
+
+.value-img{
+    border-radius: 50%;
+}
+
+
+//about FAQ section
+
+.FAQ{
+    .container{
+        .header2{
+            text-align: center;
+            padding-bottom: 50px;
+            color: $titleColor;
+            font-weight: bold;
+        }
+    }
+}
+
+.FAQ-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.FAQ-right{
+    width: 60%;
+}
+
+.accordion-item{
+    margin-bottom: 20px;
+    background-color: $snow;
+    border: none;
+}
+
+.accordion-header{
+    .accordion-button{
+        color: $titleColor;
+        font-weight: bold;
+        background-color: $snow;
+        border: none;
+    }
+}
+
+.accordion-body{
+    color: $textColor;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+// end of About page
+
+//careers page starts
+
+
+.careers-bg-image{
+    background-image: url('../images/careers-bg-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+
+//main body of Careers
+
+.careers-longline-from-right{
+    position: absolute;
+    top: 60%;
+    right: 0;
+}
+
+
+// jobs section of Careers
+
+.jobs-item{
+    background-color: $snow;
+    padding: 5px 40px;
+    @include flex();
+    margin-bottom: 20px;
+}
+
+.jobs-text{
+    padding-top: 5px;
+    color: $titleColor;
+}
+
+
+//locations landing page
+
+.world-map-info{
+    padding-top: 50px;
+    @include flex();
+    h2{
+        width: 30%;
+    } 
+
+    p{
+        width: 45%;
+    }
+}
+
+//MEIDA QUERIES OF THE PAGES
+//HOME PAGE 
+
+@media (max-width:1160px){
+
+    //HOMEPAGE STARTS
+
+    .container,
+    .about-container{
+        width: 1000px;
+    }
+    
+    section{
+        padding: 70px 0;
+    }
+
+    .nav-list{
+        margin-left: -300px;
+    }
+
+    .straight-line, .circles{
+        display: none;
+    }
+
+    .scooter-sharing__info{
+        .header1{
+            padding-left: 50px;
+        }
+    }
+
+    .benefits-line{
+        top: 25%;
+    }
+
+    // .half-left-circle,
+    // .half-right-circle,
+    // .half-left-circle2{
+    //     display: none;
+    // }
+
+    .scoot-info-item{
+        justify-content: space-around;
+    }
+
+    .sign-up{
+        .container{
+            justify-content: space-evenly;
+        }
+    }
+
+    .footer{
+        .container{
+            justify-content: space-around;
+            .footer-list{
+                margin-left: -200px;
+            }
+        }
+    }
+
+    //HOMEPAGE ends here
+}
+
+
+@media (max-width: 1024px){
+    .container,
+    .about-container{
+        width: 900px;
+    }
+
+    .nav-list{
+        margin-left: -200px;
+    }
+
+    .scooter-sharing{
+        background-position: center;
+        padding: 250px 0;
+    }
+
+    .scooter-sharing__info{
+        width: 80%;
+        text-align: center;
+        padding-left: 0;
+        
+        .header1{
+            padding-left: 100px;
+            text-align: center;
+        }
+    }
+
+    .circles{
+        display: inline-block;
+        top: 82%;
+    }
+
+    .uneven-line{
+        top: 75%;
+        left: 0;
+    }
+
+    .benefits-list{
+        flex-direction: column;
+    }
+
+    .benefits-item{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .benefits-item-info{
+        width: 60%;
+    }
+
+    .benefits-line{
+        transform: rotate(90deg);
+        top: 0%;
+        left: -29%;
+    }
+
+    .scoot-info-item{
+        flex-direction: column-reverse !important;
+    }
+
+    .scoot-info-item-content{
+        width: 80%;
+        text-align: center;
+
+        .header2{
+            padding-top: 50px;
+        }
+    }
+
+    .longline-from-right{
+        top: 15%;
+    }
+
+    .sign-up{
+        .container{
+            flex-direction: column;
+            text-align: center;
+
+            .sign-up-info{
+                width: 50%;
+                padding-bottom: 50px;
+            }
+        }
+    }
+
+    .footer-list{
+        margin-left: -100px !important;
+    }
+
+    //HOMEPAGE ends
+
+    //About landing page
+
+    .about-girl-line{
+        top: 20%;
+    }
+
+    .about-half-left-circle{
+        top: 4%;
+    }
+
+    .values-list{
+        flex-direction: column;
+    }
+
+    .values-item{
+        width: 80%;
+    }
+
+    .text{
+        padding: 20px 0;
+    }
+
+    .FAQ-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .FAQ-right,.FAQ-left{
+        width: 80%;
+    }
+
+    //careers page
+
+    .careers-longline-from-right{
+        top: 40%;
+    }
+}
+
+
+@media (max-width: 920px){
+    .container,
+    .about-container{
+        width: 768px;
+    }
+
+    .nav-list{
+        margin-left: -100px;
+    }
+
+    .benefits-line{
+        left: -33%;
+    }
+}
+
+
+@media (max-width: 780px){
+    .container,
+    .about-container{
+        width: 600px;
+    }
+
+    section{
+        padding: 60px 0;
+    }
+
+    .navbar{
+        .container,
+        .about-container{
+            margin-left: 10%;
+            width: 55%;
+            justify-content: space-between;
+        }
+    }
+    
+    .nav-list,
+    .nav-btn{
+        display: none;
+    }
+    
+
+    .bar-menu-link{
+        display: inline-block;
+    }
+
+    .uneven-line,
+    .circles{
+        display: none;
+    }
+
+    .scooter-sharing{
+        background-position: center right;
+        padding: 200px 0;
+        .container{
+            width: 68%;
+        }
+    }
+
+    .media-line{
+        display: inline-block;
+        position: absolute;
+        top: 75%;
+        left: 0;
+        //z-index: 999;
+    }
+
+    .scooter-sharing__info{
+        width: 100%;
+        .header1{
+            padding-left: 0;
+        }
+        .scooter-sharing__mini___info{
+            padding-left: 0;
+        }
+    }
+
+    .benefits-line{
+        display: none;
+    }
+
+    .benefits-item{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .benefits-item-info{
+        width: 80%;
+    }
+
+    .half-left-circle,
+    .half-left-circle2,
+    .half-right-circle{
+        display: none;
+    }
+
+    .header1{
+        font-size: $headerSize_2;
+    }
+
+    .header2{
+        font-size: $headerSize_3;
+    }
+
+    .sign-up-info{
+        width: 80% !important;
+    }
+
+    .footer{
+        padding: 50px 0;
+        .container{
+            flex-direction: column;
+            align-items: center;
+
+            .footer-list{
+                flex-direction: column;
+                align-items: center;
+                padding-top: 20px;
+                padding-left: 100px;
+
+                .footer-item{
+                    padding: 20px 0;
+                }
+            }
+
+            .icons-list{
+                padding-top: 20px;
+
+                .icons-item{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    //HOMEPAGE ends here
+
+    //about page starts
+
+    .about-bg-image{
+        background-position: center;
+        text-align: center;
+    }
+
+    .about-half-left-circle,
+    .about-half-right-circle{
+        display: none;
+    }
+
+    .about-girl-line{
+        top: 18%;
+    }
+
+    .icons-list{
+        padding-left: 0;
+    }
+
+
+    //careers page
+
+    .careers-bg-image{
+        background-position: left;
+        text-align: center;
+    }
+
+    .jobs-item{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .careers-btn{
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 620px){
+    .container,
+    .about-container{
+        width: 500px;
+    }
+
+    .header1{
+        font-size: $headerSize_3;
+    }
+
+    .header2{
+        font-size: $headerSize_4;
+    }
+
+    .header3{
+        font-size: 20px;
+    }
+    .media-line{
+        top: 70%;
+    }
+
+    .btn{
+        padding: 5px 20px;
+        font-weight: normal;
+    }
+
+    //about page
+
+}
+
+
+@media (max-width: 520px){
+    .container,
+    .about-container{
+        width: 95%;
+    }
+
+    section{
+        padding: 40px 0;
+    }
+    
+    .scooter-sharing{
+        padding: 150px 0;
+    }
+
+    .media-line{
+        top: 78%;
+    }
+
+    .longline-from-right{
+        top: 13%;
+    }
+
+    .line-from-left{
+        top: 37%;
+    }
+
+    .short-line-from-right{
+        top: 70%;
+    }   
+
+
+    //about page
+
+    // .number{
+    //     margin-top: -40px;
+    // }
+}
+
+@media (max-width: 395px){
+    .number{
+        margin-top: -50px;
+    }
+}
+
+
+
+
