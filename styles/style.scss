@@ -311,15 +311,16 @@ section{
 }
 
 .appStoreLink{
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .sign-up-links{
    @include flex();
    a{
-       //min-height: 140px;
+       min-height: 140px;
+       margin-top: 60px;
        img{
-           width: 100%;
+           max-width: 100%;
        }
    }
 }

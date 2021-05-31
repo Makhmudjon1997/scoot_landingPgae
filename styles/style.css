@@ -324,7 +324,7 @@ section {
 }
 
 .appStoreLink {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .sign-up-links {
@@ -339,8 +339,13 @@ section {
           align-items: center;
 }
 
+.sign-up-links a {
+  min-height: 140px;
+  margin-top: 60px;
+}
+
 .sign-up-links a img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .appStoreLink:hover,
