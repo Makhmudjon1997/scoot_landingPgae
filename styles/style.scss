@@ -893,12 +893,59 @@ section{
         display: inline-block;
     }
 
+    .nav-list.activated{
+        z-index: 888;
+        position: fixed;
+        background-color: $titleColor;
+        top: 0%;
+        left: 0;
+        width: 380px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 5px 25px;
+        transition: .3s ease;
+
+        .nav-item{
+            .nav-link{
+                font-size: $headerSize_4;
+                &:hover{
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+
+    .bar-menu-link.activated{
+        z-index: 999;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: .4s ease;
+
+        img {
+            content:url(../images/icon-menu-close.svg);
+        }
+        
+    }
+
+    .nav-btn.activated{
+        display: inline-block;
+        position: fixed;
+        bottom: 5%;
+        left: 5%;
+        z-index: 999;
+    }
+
     .uneven-line,
     .circles{
         display: none;
     }
 
     .scooter-sharing{
+
         background-position: center right;
         padding: 200px 0;
         .container{
