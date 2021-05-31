@@ -53,7 +53,20 @@
 
         <section class="world-map">
             <div class="container">
-                <img src="./images/world-map.png" alt="world-map">
+                <picture>
+                    <source media="(max-width: 780px)" srcset="./images/world-map-dot.png" class="world-map-dot">
+                    <img src="./images/world-map.png" alt="world-map" class="world-map-img">
+                </picture>
+                <img src="./images/New-york.png" alt="newYork" class="new-york-img">
+                <img src="./images/London.png" alt="london" class="london-img">
+                <img src="./images/Yokohoma.png" alt="yokohoma" class="yokohoma-img">
+                <img src="./images/Jakarta.png" alt="jakarta" class="jakarta-img">
+                <div class="world-map-countries">
+                    <h2 class="header2">New York</h2>
+                    <h2 class="header2">London</h2>
+                    <h2 class="header2">Jakarta</h2>
+                    <h2 class="header2">Yokohama</h2>
+                </div>
                 <div class="world-map-info">
                     <h2 class="header2">Your city not listed?</h2>
                     <p class="text">If you’d like to see Scoot in your hometown, be sure to let us know. We track requests and plan launches based on demand. Feel free to message us by clicking the link or messaging us on social.

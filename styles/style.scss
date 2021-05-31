@@ -547,6 +547,12 @@ section{
 
 
 //locations landing page
+.world-map{
+    .container{
+        position: relative;
+    }
+}
+
 
 .world-map-info{
     padding-top: 50px;
@@ -560,6 +566,37 @@ section{
     }
 }
 
+.london-img,
+.new-york-img,
+.yokohoma-img,
+.jakarta-img{
+    position: absolute;
+}
+
+.new-york-img{
+    left: 13%;
+    top: 7%;
+}
+
+.london-img{
+    left: 35%;
+    top: 0%;
+}
+
+.yokohoma-img{
+    right: 7%;
+    top: 8%;
+}
+
+
+.jakarta-img{
+    top: 29%;
+    right: 13%;
+}
+
+.world-map-countries{
+    display: none;
+}
 //MEIDA QUERIES OF THE PAGES
 //HOME PAGE 
 
@@ -620,6 +657,18 @@ section{
     }
 
     //HOMEPAGE ends here
+
+    //locations page
+
+    .world-map-info{
+        flex-direction: column;
+
+        .text,
+        .header2{
+            width: 70%;
+            text-align: center;
+        }
+    }
 }
 
 
@@ -750,6 +799,26 @@ section{
     .careers-longline-from-right{
         top: 40%;
     }
+
+    //location page
+
+    .new-york-img{
+        top: 4%;
+    }
+
+    .london-img{
+        top: -1%;
+    }
+
+    .yokohoma-img{
+        right: 4%;
+    }
+
+    .jakarta-img{
+        right: 10%;
+        top: 25%;
+    }
+
 }
 
 
@@ -765,6 +834,31 @@ section{
 
     .benefits-line{
         left: -33%;
+    }
+
+    //location page
+
+    .new-york-img{
+        top: 5%;
+        left: 12%;
+        width: 20%;
+    }
+
+    .london-img{
+        top: -1%;
+        width: 20%;
+    }
+
+    .yokohoma-img{
+        top: 6%;
+        right: 5%;
+        width: 20%;
+    }
+
+    .jakarta-img{
+        right: 10%;
+        top: 22%;
+        width: 20%;
     }
 }
 
@@ -926,6 +1020,34 @@ section{
     .careers-btn{
         width: 80%;
     }
+
+
+    //loactions page
+
+    .london-img,
+    .new-york-img,
+    .yokohoma-img,
+    .jakarta-img{
+        display: none;
+    }
+
+    .world-map-img{
+        width: 100%;
+    }
+
+    .world-map-countries{
+        display: block;
+        padding: 20px  0;
+        text-align: center;
+
+        .header2{
+            background-color: rgba(252, 183, 43, 0.15);
+            margin: 10px 0;
+            padding: 20px 0;
+            color: $titleColor;
+        }
+    }
+
 }
 
 

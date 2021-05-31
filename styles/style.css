@@ -588,6 +588,10 @@ section {
   color: #495567;
 }
 
+.world-map .container {
+  position: relative;
+}
+
 .world-map-info {
   padding-top: 50px;
   display: -webkit-box;
@@ -607,6 +611,37 @@ section {
 
 .world-map-info p {
   width: 45%;
+}
+
+.london-img,
+.new-york-img,
+.yokohoma-img,
+.jakarta-img {
+  position: absolute;
+}
+
+.new-york-img {
+  left: 13%;
+  top: 7%;
+}
+
+.london-img {
+  left: 35%;
+  top: 0%;
+}
+
+.yokohoma-img {
+  right: 7%;
+  top: 8%;
+}
+
+.jakarta-img {
+  top: 29%;
+  right: 13%;
+}
+
+.world-map-countries {
+  display: none;
 }
 
 @media (max-width: 1160px) {
@@ -644,6 +679,17 @@ section {
   }
   .footer .container .footer-list {
     margin-left: -200px;
+  }
+  .world-map-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .world-map-info .text,
+  .world-map-info .header2 {
+    width: 70%;
+    text-align: center;
   }
 }
 
@@ -765,6 +811,19 @@ section {
   .careers-longline-from-right {
     top: 40%;
   }
+  .new-york-img {
+    top: 4%;
+  }
+  .london-img {
+    top: -1%;
+  }
+  .yokohoma-img {
+    right: 4%;
+  }
+  .jakarta-img {
+    right: 10%;
+    top: 25%;
+  }
 }
 
 @media (max-width: 920px) {
@@ -777,6 +836,25 @@ section {
   }
   .benefits-line {
     left: -33%;
+  }
+  .new-york-img {
+    top: 5%;
+    left: 12%;
+    width: 20%;
+  }
+  .london-img {
+    top: -1%;
+    width: 20%;
+  }
+  .yokohoma-img {
+    top: 6%;
+    right: 5%;
+    width: 20%;
+  }
+  .jakarta-img {
+    right: 10%;
+    top: 22%;
+    width: 20%;
   }
 }
 
@@ -918,6 +996,26 @@ section {
   }
   .careers-btn {
     width: 80%;
+  }
+  .london-img,
+  .new-york-img,
+  .yokohoma-img,
+  .jakarta-img {
+    display: none;
+  }
+  .world-map-img {
+    width: 100%;
+  }
+  .world-map-countries {
+    display: block;
+    padding: 20px  0;
+    text-align: center;
+  }
+  .world-map-countries .header2 {
+    background-color: rgba(252, 183, 43, 0.15);
+    margin: 10px 0;
+    padding: 20px 0;
+    color: #495567;
   }
 }
 
