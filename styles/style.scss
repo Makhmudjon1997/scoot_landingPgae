@@ -907,8 +907,10 @@ section{
         flex-direction: column;
         box-shadow: 0 5px 25px;
         transition: .3s ease;
+        
 
         .nav-item{
+            padding: 30px 0 !important;
             .nav-link{
                 font-size: $headerSize_4;
                 &:hover{

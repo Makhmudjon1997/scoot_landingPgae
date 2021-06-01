@@ -9,13 +9,11 @@
     navListElement.classList.toggle('activated');
     navBtnElement.classList.toggle('activated')
  });
-
  
  navListItemsElement.forEach(navItem => {
     navItem.addEventListener('click', ()=> {
         menuBtnElement.classList.remove('activated');
         navListElement.classList.remove('activated');
-        navBtnElement.classList.remove('avtivated')
     })
 })
 
