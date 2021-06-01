@@ -12,7 +12,7 @@
  
  navListItemsElement.forEach(navItem => {
     navItem.addEventListener('click', ()=> {
-        menuBtnElement.classList.remove('activated');
+        navBtnElement.classList.remove('activated');
         navListElement.classList.remove('activated');
     })
 })

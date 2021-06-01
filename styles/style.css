@@ -255,6 +255,10 @@ section {
   width: 45%;
 }
 
+.scoot-info-list {
+  padding-left: 0;
+}
+
 .girl-with-phone {
   border-radius: 50%;
 }
@@ -912,6 +916,9 @@ section {
     -webkit-transition: .3s ease;
     transition: .3s ease;
   }
+  .nav-list.activated .nav-item {
+    padding: 30px 0 !important;
+  }
   .nav-list.activated .nav-item .nav-link {
     font-size: 24px;
   }
@@ -1124,7 +1131,7 @@ section {
 
 @media (max-width: 395px) {
   .number {
-    margin-top: -50px;
+    margin-top: -20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
