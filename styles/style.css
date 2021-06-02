@@ -152,6 +152,296 @@ section {
   text-decoration: underline;
 }
 
+.footer {
+  background-color: #333A44;
+  padding: 20px 0;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -440px;
+}
+
+.footer-item {
+  padding: 0 30px;
+}
+
+.footer-link {
+  color: #939CAA;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.icons-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icons-item {
+  padding: 0 10px;
+}
+
+.icons-link {
+  color: #FCB72B;
+}
+
+.icons-link:hover {
+  color: #ffffff;
+}
+
+.world-map .container {
+  position: relative;
+}
+
+.world-map-info {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.world-map-info h2 {
+  width: 30%;
+}
+
+.world-map-info p {
+  width: 45%;
+}
+
+.london-img,
+.new-york-img,
+.yokohoma-img,
+.jakarta-img {
+  position: absolute;
+}
+
+.new-york-img {
+  left: 13%;
+  top: 7%;
+}
+
+.london-img {
+  left: 35%;
+  top: 0%;
+}
+
+.yokohoma-img {
+  right: 7%;
+  top: 8%;
+}
+
+.jakarta-img {
+  top: 29%;
+  right: 13%;
+}
+
+.world-map-countries {
+  display: none;
+}
+
+.careers-bg-image {
+  background-image: url("../images/careers-bg-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.careers-longline-from-right {
+  position: absolute;
+  top: 60%;
+  right: 0;
+}
+
+.jobs-item {
+  background-color: #F2F5F9;
+  padding: 5px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.jobs-text {
+  padding-top: 5px;
+  color: #495567;
+}
+
+.about-bg-image {
+  background-image: url("../images/about-bg-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.about-girl-line {
+  position: absolute;
+  top: 33%;
+  right: 0;
+}
+
+.about-bus-line {
+  position: absolute;
+  top: 53%;
+}
+
+.about-half-right-circle,
+.about-half-left-circle {
+  position: absolute;
+}
+
+.about-half-left-circle {
+  top: 10%;
+  right: 0;
+}
+
+.about-half-right-circle {
+  top: 52%;
+  left: 0;
+}
+
+.about-values .container {
+  text-align: center;
+}
+
+.about-values .container .header2 {
+  color: #495567;
+  padding-bottom: 30px;
+}
+
+.values-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.values-item {
+  position: relative;
+  padding: 0 10px;
+}
+
+.values-item .number {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #FCB72B;
+}
+
+.values-item .title {
+  padding-top: 60px;
+}
+
+.value-img {
+  border-radius: 50%;
+}
+
+.FAQ .container .header2 {
+  text-align: center;
+  padding-bottom: 50px;
+  color: #495567;
+  font-weight: bold;
+}
+
+.FAQ-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.FAQ-right {
+  width: 60%;
+}
+
+.accordion-item {
+  margin-bottom: 20px;
+  background-color: #F2F5F9;
+  border: none;
+}
+
+.accordion-header .accordion-button {
+  color: #495567;
+  font-weight: bold;
+  background-color: #F2F5F9;
+  border: none;
+}
+
+.accordion-body {
+  color: #939CAA;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
 .scooter-sharing {
   background-image: url("../images/Bitmap.jpg");
   background-repeat: no-repeat;
@@ -361,296 +651,6 @@ section {
   position: absolute;
   bottom: 0;
   right: 0;
-}
-
-.footer {
-  background-color: #333A44;
-  padding: 20px 0;
-}
-
-.footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: -440px;
-}
-
-.footer-item {
-  padding: 0 30px;
-}
-
-.footer-link {
-  color: #939CAA;
-}
-
-.footer-link:hover {
-  text-decoration: underline;
-}
-
-.icons-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.icons-item {
-  padding: 0 10px;
-}
-
-.icons-link {
-  color: #FCB72B;
-}
-
-.icons-link:hover {
-  color: #ffffff;
-}
-
-.about-bg-image {
-  background-image: url("../images/about-bg-img.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #ffffff;
-}
-
-.about-girl-line {
-  position: absolute;
-  top: 33%;
-  right: 0;
-}
-
-.about-bus-line {
-  position: absolute;
-  top: 53%;
-}
-
-.about-half-right-circle,
-.about-half-left-circle {
-  position: absolute;
-}
-
-.about-half-left-circle {
-  top: 10%;
-  right: 0;
-}
-
-.about-half-right-circle {
-  top: 52%;
-  left: 0;
-}
-
-.about-values .container {
-  text-align: center;
-}
-
-.about-values .container .header2 {
-  color: #495567;
-  padding-bottom: 30px;
-}
-
-.values-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.values-item {
-  position: relative;
-  padding: 0 10px;
-}
-
-.values-item .number {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  padding: 30px;
-  display: inline-block;
-  border-radius: 50%;
-  background-color: #FCB72B;
-}
-
-.values-item .title {
-  padding-top: 60px;
-}
-
-.value-img {
-  border-radius: 50%;
-}
-
-.FAQ .container .header2 {
-  text-align: center;
-  padding-bottom: 50px;
-  color: #495567;
-  font-weight: bold;
-}
-
-.FAQ-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-bottom: 50px;
-}
-
-.FAQ-right {
-  width: 60%;
-}
-
-.accordion-item {
-  margin-bottom: 20px;
-  background-color: #F2F5F9;
-  border: none;
-}
-
-.accordion-header .accordion-button {
-  color: #495567;
-  font-weight: bold;
-  background-color: #F2F5F9;
-  border: none;
-}
-
-.accordion-body {
-  color: #939CAA;
-  font-family: 'Lexend Deca', sans-serif;
-}
-
-.careers-bg-image {
-  background-image: url("../images/careers-bg-img.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #ffffff;
-}
-
-.careers-longline-from-right {
-  position: absolute;
-  top: 60%;
-  right: 0;
-}
-
-.jobs-item {
-  background-color: #F2F5F9;
-  padding: 5px 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 20px;
-}
-
-.jobs-text {
-  padding-top: 5px;
-  color: #495567;
-}
-
-.world-map .container {
-  position: relative;
-}
-
-.world-map-info {
-  padding-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.world-map-info h2 {
-  width: 30%;
-}
-
-.world-map-info p {
-  width: 45%;
-}
-
-.london-img,
-.new-york-img,
-.yokohoma-img,
-.jakarta-img {
-  position: absolute;
-}
-
-.new-york-img {
-  left: 13%;
-  top: 7%;
-}
-
-.london-img {
-  left: 35%;
-  top: 0%;
-}
-
-.yokohoma-img {
-  right: 7%;
-  top: 8%;
-}
-
-.jakarta-img {
-  top: 29%;
-  right: 13%;
-}
-
-.world-map-countries {
-  display: none;
 }
 
 @media (max-width: 1160px) {
