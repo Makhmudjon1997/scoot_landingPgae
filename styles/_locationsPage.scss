@@ -1,0 +1,51 @@
+//locations landing page
+.world-map{
+    .container{
+        position: relative;
+    }
+}
+
+
+.world-map-info{
+    padding-top: 50px;
+    @include flex();
+    h2{
+        width: 30%;
+    } 
+
+    p{
+        width: 45%;
+    }
+}
+
+.london-img,
+.new-york-img,
+.yokohoma-img,
+.jakarta-img{
+    position: absolute;
+}
+
+.new-york-img{
+    left: 13%;
+    top: 7%;
+}
+
+.london-img{
+    left: 35%;
+    top: 0%;
+}
+
+.yokohoma-img{
+    right: 7%;
+    top: 8%;
+}
+
+
+.jakarta-img{
+    top: 29%;
+    right: 13%;
+}
+
+.world-map-countries{
+    display: none;
+}

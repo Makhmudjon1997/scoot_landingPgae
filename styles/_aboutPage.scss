@@ -1,0 +1,126 @@
+//about landing page
+
+.about-bg-image{
+    background-image: url('../images/about-bg-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    //padding-left: 150px;
+}
+
+
+.about-girl-line{
+    position: absolute;
+    top: 33%;
+    right: 0;
+}
+.about-bus-line{
+    position: absolute;
+    top: 53%;
+}
+
+
+.about-half-right-circle,
+.about-half-left-circle{
+    position: absolute;
+}
+
+.about-half-left-circle{
+    top: 10%;
+    right: 0;
+}
+
+.about-half-right-circle{
+    top: 52%;
+    left: 0;
+}
+
+
+//about-values-section
+
+.about-values{
+    .container{
+        text-align: center;
+        .header2{
+            color: $titleColor;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.values-list{
+    @include flex();
+}
+
+.values-item{
+    position: relative;
+    padding: 0 10px;
+    .number{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 30px;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: $primaryColor;
+    }
+
+    .title{
+        padding-top: 60px;
+    }
+}
+
+.value-img{
+    border-radius: 50%;
+}
+
+
+//about FAQ section
+
+.FAQ{
+    .container{
+        .header2{
+            text-align: center;
+            padding-bottom: 50px;
+            color: $titleColor;
+            font-weight: bold;
+        }
+    }
+}
+
+.FAQ-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.FAQ-right{
+    width: 60%;
+}
+
+.accordion-item{
+    margin-bottom: 20px;
+    background-color: $snow;
+    border: none;
+}
+
+.accordion-header{
+    .accordion-button{
+        color: $titleColor;
+        font-weight: bold;
+        background-color: $snow;
+        border: none;
+    }
+}
+
+.accordion-body{
+    color: $textColor;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+// end of About page

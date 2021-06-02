@@ -1,0 +1,40 @@
+.footer{
+    background-color: #333A44;
+    padding: 20px 0;
+    .container{
+        @include flex();        
+    }
+}
+
+.footer-list{
+    @include flex();
+    margin-left: -440px;
+}
+
+.footer-item{
+    padding: 0 30px;
+}
+
+.footer-link{
+    color: $textColor;
+
+    &:hover{
+        text-decoration: underline
+    }
+}
+
+.icons-list{
+    @include flex();
+}
+
+.icons-item{
+    padding: 0 10px;
+}
+
+.icons-link{
+    color: $primaryColor;
+
+    &:hover{
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,186 @@
+//main body starts here
+
+.scooter-sharing{
+    background-image: url('../images/Bitmap.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.scooter-sharing__info{
+    width: 50%;
+
+    .header1{
+        color: #ffffff;
+    }
+}
+
+.scooter-sharing__mini___info{
+    .text{
+        color: #ffffff;
+    }
+
+    padding-left: 140px;
+}
+
+.straight-line,
+.uneven-line,
+.circles{
+    position: absolute;
+}
+
+.straight-line{
+    top: 55%;   
+}
+
+.uneven-line{
+    top: 55%;
+    left: 52%;
+}
+
+.circles{
+    top: 65%;
+    right: 0%;
+}
+
+// benefits section
+
+.benefits{
+    position: relative;
+}
+
+.benefits-list{
+    @include flex();
+}
+
+.benefits-item{
+    padding: 0 10px;
+
+    img{
+        padding-bottom: 20px;
+        }
+}
+
+.benefits-line{
+    position: absolute;
+    top: 32%;
+    left: 0;
+    z-index: -1;
+}
+
+
+//scoot-info starts
+
+.scoot-info{
+    position: relative;
+}
+
+
+.scoot-info-item{
+    @include flex();
+    padding: 50px 0;
+    position: relative;
+}
+
+.scoot-info-item:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+.scoot-info-item-content{
+    width: 45%;
+}
+
+.scoot-info-list{
+    padding-left: 0 ;
+}
+
+.girl-with-phone{
+    border-radius: 50%;
+}
+
+.longline-from-right,
+.line-from-left,
+.short-line-from-right{
+    position: absolute;
+}
+
+.longline-from-right{
+    right: 0;
+    top: 25%;
+}
+
+.line-from-left{
+    top: 37%;
+    left: 0;
+}
+
+.short-line-from-right{
+    right: 0;
+    top: 72%;
+}
+
+.half-left-circle,
+.half-right-circle,
+.half-left-circle2{
+    position: absolute;
+}
+
+.half-left-circle{
+    top: 2%;
+    right: 0;
+}
+
+.half-right-circle{
+    left: 0;
+    top: 37%;
+}
+
+.half-left-circle2{
+    right: 0%;
+    top: 68%;
+}
+
+
+//sign up section
+
+.sign-up{
+    background-color: $titleColor;
+    color: #ffffff;
+    position: relative;
+
+    .container{
+        @include flex()
+    }
+}
+
+.sign-up-info{
+    width: 40%;
+}
+
+.appStoreLink{
+    margin-right: 5px;
+}
+
+.sign-up-links{
+   @include flex();
+   a{
+       min-height: 140px;
+       margin-top: 60px;
+       img{
+           max-width: 100%;
+       }
+   }
+}
+
+
+.appStoreLink:hover,
+.googlePlayLink:hover{
+    cursor: pointer;
+}
+
+.triple-circle{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

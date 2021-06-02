@@ -1,0 +1,36 @@
+// header
+.navbar{
+    padding: 22px 0;
+    .container{
+        @include flex();
+    }
+    .about-container{
+        @include flex();
+    }
+}
+
+.bar-menu-link{
+    display: none;
+}
+
+.media-line{
+    display: none
+}
+.nav-list{
+    @include flex();
+    margin-left: -440px;
+    //padding-top: 20px;
+}
+
+.nav-item{
+    padding: 0 30px;
+}
+
+.nav-link{
+    color: $textColor;
+    font-size: $textSize;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}

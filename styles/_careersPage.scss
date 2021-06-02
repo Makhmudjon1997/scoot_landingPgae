@@ -1,0 +1,36 @@
+//careers page starts
+
+
+.careers-bg-image{
+    background-image: url('../images/careers-bg-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+
+//main body of Careers
+
+.careers-longline-from-right{
+    position: absolute;
+    top: 60%;
+    right: 0;
+}
+
+
+// jobs section of Careers
+
+.jobs-item{
+    background-color: $snow;
+    padding: 5px 40px;
+    @include flex();
+    margin-bottom: 20px;
+}
+
+.jobs-text{
+    padding-top: 5px;
+    color: $titleColor;
+}
